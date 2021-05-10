@@ -1,0 +1,15 @@
+Ce texte a été le premier gros mur sur lequel j'ai buté dans le cadre de ce devoir, j'ai essayé beaucoup de choses différentes avant de trouver.
+d'abord suite a l'indice du texte 2, j'ai reconnu la méthode expliqué en cours, et suite a des recherches en ligne compris qu'il sagissait d'un chiffrement de vigenere.
+- J'ai essayé une méthode permettant a l'aide des répétitions de déterminer la taille de la clé, pour pouvoir faire une analyse fréquentielle.
+    j'ai trouvé des répétitions espacés de (8, 24, 132, 20) caractères, et aurait dû en conclure que la taille de la clé était de 4 (PGCD), mais je
+    pensais a ce moment là que le texte était trop court pour appliquer cette méthode.
+- J'ai ensuite essayé la force brute, en créant une fonction qui générait toutes les possibilités de mots de passes faits de lettres (en fonction de la taille demandée),
+    une autre fonction les testait, et une dernière vérifiait après chaque test si une série de mots étaient présents. Ces fonctions ne sont pas présentes ici car il me manquait
+    un détail pour que l'attaque fonctionne. Je n'avais pas compris que même si seuls les lettres étaient chiffrés, la clé passait sur les caractères spéciaux.
+    (je les ai toujours cependant, si jamais)
+- Enfin, la méthode qui a fonctionné;
+    a l'aide d'une fonction générer une clé en donnant un texte chiffré, et la version clair du texte, j'ai déterminer la clé de chiffrement.
+    J'ai essayé des mots qui me semblait probable de trouver dans le texte, si je trouvais un mot de la même taille, en essayant a chaque fois la clé sur le début du texte.
+    C'est au final avec le mot 'indice' correspondant a 'kyhhep' que j'ai trouvé 'xovaxo' soit le cas idéal, un cas ou la clé se répétait.
+    j'ai vu que la clé donnait 'bravo' sur le premier mot du texte, mais que la suite était incohérente, j'ai donc compris que les caractères spéciaux étaient importants et décryptés
+    le texte.
