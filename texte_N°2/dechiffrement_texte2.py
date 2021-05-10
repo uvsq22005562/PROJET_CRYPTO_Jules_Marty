@@ -1,5 +1,12 @@
 EXCEPTION = [' ', '.', ':']  # caractères non alphabétiques a ignorer
 
+# caractères alphabétiques a remplacer
+DICTIONNAIRE = [['x', 'e'], ['q', 'p'], ['o', 'r'], ['s', 'o'],
+                ['c', 'd'], ['v', 'c'], ['l', 'h'], ['g', 'l'],
+                ['n', 'a'], ['i', 's'], ['k', 'i'], ['d', 'n'],
+                ['m', 'g'], ['f', 'm'], ['w', 'f'], ['u', 't'],
+                ['y', 'u']]
+
 
 def chercher_texte(repertoire):
     ''' va chercher le fichier donné et restitu une chaine de
@@ -32,5 +39,19 @@ def frequence_lettres(texte):
     return freq
 
 
-chaine = chercher_texte('texte_N°2/Texte2.txt')
-print(frequence_lettres(chaine))
+def substitution_dechiffrement(texte, dictionnaire):
+    ''' remplace toutes les lettres d'un texte par leurs
+    substitution en fonction d'un dictionnaire de correspondance '''
+    temp = [DICTIONNAIRE[i][0] for i in range(len(DICTIONNAIRE))]
+    res = ''
+    for elm in texte:
+        if elm in temp and elm not in EXCEPTION:
+            res += DICTIONNAIRE[temp.index(elm)][1]
+        else:
+            res += elm
+    return res
+
+
+print(frequence_lettres(chercher_texte('texte_N°2/Texte2.txt')))
+print(substitution_dechiffrement(chercher_texte('texte_N°2/Texte2.txt'),
+      DICTIONNAIRE))

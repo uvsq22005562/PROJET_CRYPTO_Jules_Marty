@@ -1,0 +1,4 @@
+comme indiqué dans l'indice du texte 1, j'ai créer un dictionnaire pour analyser la fréquence d'apparition des lettres dans le texte.
+J'ai ensuite créer une fonction pour pouvoir remplacer chaque lettre par une autre selon un dictionnaire choisi.
+J'ai ensuite rempli petit a petit le dictionnaire de substitution, en commençant par les lettres les plus fréquentes mise en parallèles des lettres les plus souvents
+observés en français.

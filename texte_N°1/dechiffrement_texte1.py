@@ -19,7 +19,7 @@ def rang(lettre):
 def decalage(lettre_message, lettre_cle):
     ''' décale une lettre en fonction du rang d'une seconde, reviens
     au début de l'alphabet si les rangs additionnés > 26 '''
-    res = chr((rang(lettre_message) + rang(lettre_cle))%26 +96)
+    res = chr((rang(lettre_message) + rang(lettre_cle)) % 26 + 96)
     if ord(res) == 96:
         res = chr(122)
     return res
