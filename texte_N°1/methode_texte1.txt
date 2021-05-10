@@ -1,0 +1,2 @@
+Durant le cours, nous avions eu l'information suivante: le texte était chiffré par code de césar.
+il suffisait donc de tester des décalages sur le texte, avec les fonctions précédentes, jusqu'a obtenir un résultat cohérent.

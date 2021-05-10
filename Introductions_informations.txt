@@ -4,5 +4,6 @@ C'est pourquoi les fonctions telles que je les ai codés dans un premier temps s
 
 Dans chaque dossier est contenu:
 - le texte a déchiffrer
+- le texte en clair
 - le programme permettant de de déchiffrer le texte
 - un fichier .txt expliquant le cheminement utilisé pour déchiffrer le texte.
