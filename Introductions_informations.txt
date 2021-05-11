@@ -1,6 +1,5 @@
-Deux des textes étant des chiffrements de vigenère, et tout les textes étant des chiffrements alphabétiques (poly/mono), les fonctions que j'ai utilisés sont souvent
-similaires, ne comportant que des variations en fonction du texte.
-C'est pourquoi les fonctions telles que je les ai codés dans un premier temps sont rassemblés dans le fichier fonctions_communes.py.
+Deux des textes étant des chiffrements de vigenère, et tout les textes étant des chiffrements alphabétiques, les fonctions que j'ai utilisés sont souvent
+similaires, et se retrouvent souvent dans les fichier.py des textes suivants.
 
 Dans chaque dossier est contenu:
 - le texte a déchiffrer

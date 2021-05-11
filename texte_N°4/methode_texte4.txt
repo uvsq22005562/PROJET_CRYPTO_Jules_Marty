@@ -1,0 +1,15 @@
+J'ai commencé par faire une fonction pour inverser le texte, a cause du mot 'miroir' présent dans l'indice du fichier précédent.
+J'ai ensuite procédé par mot probable pour les deux premiers mots du début du texte 'III III' une suite de deux mots de trois lettres ne peux représenter que peux de combinaisons.
+    - 'des les' 'car les' 'car ils' 'ont ils' 'car les' 'les pas' 'par les'ect..  et bien entendu 'sur les'
+    pour chaque combinaison de mots, si une répétition de lettres s'y trouvais, (abcdeab) je la faisait passer sur le texte (en enlevant bien sure la répétition)
+    J'ai donc fini par trouver 'izezayi' que j'ai fais passer sur le texte en tant que 'izezay'
+    bien entendu le z central était du a l'espace et en reconnaissant le mot 'grands' on voyait que (v) codait ici pour (r) et donc que dans la clé le z central = v
+    j'ai donc trouvé la clé 'izevay'
+
+    - problème : je faisait passer la clé de façon similaire sur chaque ligne (chacunes contenues dans une liste) et seuls deux étaient coéhrentes :
+    sur les grands boulevards (N°1) | les chiens noirs du lexique (N°16)
+    ce qui était incohérent, la clé était bonne (et le professeur nous avait assuré que la clé ne changeait pas) mais seuls deux parties du textes fonctionnaient.
+    J'ai donc conclu que la clé commençait différement sur chaque ligne, et ai (par tatonnement et a l'aide de la fonction de déchiffrement de vigenere du texte3)
+         trouvé des décalages cohérents, contenus dans une liste 'keylist' dans le programme.
+    
+    le (M) majuscule et le (à) ne semblait pas chiffrer, je les ai corrigés ( le M dans le programme, le à manuellement)
